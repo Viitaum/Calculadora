@@ -298,3 +298,8 @@ public class trabcalcui extends JFrame {
 	public static float divisao(float x, float y)
 	{return x / y;}
 }
+
+
+	
+
+
