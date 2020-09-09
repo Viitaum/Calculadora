@@ -21,19 +21,10 @@ public class trabcalcui extends JFrame {
 	private JPanel contentPane;
 	private JTextField txtTela;
 	
-	//private EditText edtNumero1, edtNumero2,edtResultados;
-	//private double n1, n2, resultado;
-	
-	
-	
-	
-	//valor1 = Double.parseDouble(txtTela.getText().toString());
-	//valor2 = Double.parseDouble(txtTela.getText().toString());
-	//resultado = valor1, valor2;
-	
-	//String sinal;
-	
-	
+	double n1 , n2 ;
+	double resultado;
+	String operations;
+	String responda;
 	/**
 	 * Launch the application.
 	 */
@@ -71,9 +62,9 @@ public class trabcalcui extends JFrame {
 		JButton btn7 = new JButton("7");
 		btn7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-					int b7 = 0;
-					txtTela.setText(txtTela.getText()+"7");
-					//JOptionPane.showMessageDialog(contentPane, "7");
+				
+				String EnterNumber = txtTela.getText() + btn7.getText();
+				txtTela.setText(EnterNumber);
 			}
 		});
 		btn7.setFont(new Font("Yu Gothic UI", Font.BOLD, 50));
@@ -83,8 +74,9 @@ public class trabcalcui extends JFrame {
 		JButton btn8 = new JButton("8");
 		btn8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-					int b8 = 0;
-					txtTela.setText(txtTela.getText()+"8");
+				
+				String EnterNumber = txtTela.getText() + btn8.getText();
+				txtTela.setText(EnterNumber);
 			}
 		});
 		btn8.setFont(new Font("Yu Gothic UI", Font.BOLD, 50));
@@ -94,8 +86,9 @@ public class trabcalcui extends JFrame {
 		JButton btn9 = new JButton("9");
 		btn9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-					int b9 = 0;
-					txtTela.setText(txtTela.getText()+"9");
+				
+				String EnterNumber = txtTela.getText() + btn7.getText();
+				txtTela.setText(EnterNumber);
 			}
 		});
 		btn9.setFont(new Font("Yu Gothic UI", Font.BOLD, 50));
@@ -106,8 +99,10 @@ public class trabcalcui extends JFrame {
 		btnSoma.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+				n1 = Double.parseDouble( txtTela.getText());
+				 txtTela.setText("");
+				 operations = "+";
 				
-				txtTela.setText(txtTela.getText()+"+");
 				// valor1 = Double.parseDouble(txtTela.getText().toString());
 				
 				
@@ -134,8 +129,10 @@ public class trabcalcui extends JFrame {
 		JButton btn4 = new JButton("4");
 		btn4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-					int b4 = 0;
-					txtTela.setText(txtTela.getText()+"4");
+				
+				String EnterNumber = txtTela.getText() + btn4.getText();
+				txtTela.setText(EnterNumber);
+					
 			}
 		});
 		btn4.setFont(new Font("Yu Gothic UI", Font.BOLD, 50));
@@ -145,8 +142,9 @@ public class trabcalcui extends JFrame {
 		JButton btn5 = new JButton("5");
 		btn5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-					int b5 = 0;
-					txtTela.setText(txtTela.getText()+"5");
+				
+				String EnterNumber = txtTela.getText() + btn5.getText();
+				txtTela.setText(EnterNumber);
 			}
 		});
 		btn5.setFont(new Font("Yu Gothic UI", Font.BOLD, 50));
@@ -156,8 +154,9 @@ public class trabcalcui extends JFrame {
 		JButton btn6 = new JButton("6");
 		btn6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-					int b6 = 0;
-					txtTela.setText(txtTela.getText()+"6");
+					
+				String EnterNumber = txtTela.getText() + btn6.getText();
+				txtTela.setText(EnterNumber);
 			}
 		});
 		btn6.setFont(new Font("Yu Gothic UI", Font.BOLD, 50));
@@ -167,7 +166,11 @@ public class trabcalcui extends JFrame {
 		JButton btnSub = new JButton("-");
 		btnSub.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				txtTela.setText(txtTela.getText()+"-");
+				
+				n1 = Double.parseDouble( txtTela.getText());
+				 txtTela.setText("");
+				 operations = "-";
+				 
 					//SUBTRAIR
 			}
 		});
@@ -178,8 +181,9 @@ public class trabcalcui extends JFrame {
 		JButton btn1 = new JButton("1");
 		btn1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-					int b1 = 0;
-					txtTela.setText(txtTela.getText()+"1");
+				
+				String EnterNumber = txtTela.getText() + btn1.getText();
+				txtTela.setText(EnterNumber);
 			}
 		});
 		btn1.setFont(new Font("Yu Gothic UI", Font.BOLD, 50));
@@ -189,8 +193,9 @@ public class trabcalcui extends JFrame {
 		JButton btn2 = new JButton("2");
 		btn2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-					int b2 = 0;
-					txtTela.setText(txtTela.getText()+"2");
+					
+				String EnterNumber = txtTela.getText() + btn2.getText();
+				txtTela.setText(EnterNumber);
 			}
 		});
 		btn2.setFont(new Font("Yu Gothic UI", Font.BOLD, 50));
@@ -200,8 +205,9 @@ public class trabcalcui extends JFrame {
 		JButton btn3 = new JButton("3");
 		btn3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-					int b3 = 0;
-					txtTela.setText(txtTela.getText()+"3");
+					
+				String EnterNumber = txtTela.getText() + btn3.getText();
+				txtTela.setText(EnterNumber);
 			}
 		});
 		btn3.setFont(new Font("Yu Gothic UI", Font.BOLD, 50));
@@ -212,7 +218,11 @@ public class trabcalcui extends JFrame {
 		btnX.setVerticalAlignment(SwingConstants.TOP);
 		btnX.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				txtTela.setText(txtTela.getText()+"*");
+
+				n1 = Double.parseDouble( txtTela.getText());
+				 txtTela.setText("");
+				 operations = "*"; 
+				 
 					//MULTIPLICAR
 			}
 		});
@@ -223,8 +233,9 @@ public class trabcalcui extends JFrame {
 		JButton btn0 = new JButton("0");
 		btn0.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int b0 = 0;
-				txtTela.setText(txtTela.getText()+"0");
+				
+				String EnterNumber = txtTela.getText() + btn0.getText();
+				txtTela.setText(EnterNumber);
 			}
 		});
 		btn0.setFont(new Font("Yu Gothic UI", Font.BOLD, 50));
@@ -246,8 +257,36 @@ public class trabcalcui extends JFrame {
 		JButton btnIgual = new JButton("=");
 		btnIgual.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				txtTela.setText(txtTela.getText()+"=");
-					//DIVISAO
+
+
+				String responda;
+				n2 = Double.parseDouble(txtTela.getText());
+				if (operations == "+")
+				{
+					resultado = n1 + n2;
+					responda = String.format("%.2f", resultado);
+					txtTela.setText(responda);
+				}
+				else if (operations == "-")
+				{
+					resultado = n1 - n2;
+					responda = String.format("%.2f", resultado);
+					txtTela.setText(responda);	
+				}
+				else if (operations == "*")
+				{
+					resultado = n1 * n2;
+					responda = String.format("%.2f", resultado);
+					txtTela.setText(responda);	
+				}
+				else if (operations == "/")
+				{
+					resultado = n1 / n2;
+					responda = String.format("%.2f", resultado);
+					txtTela.setText(responda);	
+				}
+				
+					
 			}
 		});
 		btnIgual.setVerticalAlignment(SwingConstants.BOTTOM);
@@ -255,11 +294,17 @@ public class trabcalcui extends JFrame {
 		btnIgual.setBounds(89, 294, 69, 60);
 		contentPane.add(btnIgual);
 		
+		
+		
+		
 		JButton btnDiv = new JButton("/");
 		btnDiv.setVerticalAlignment(SwingConstants.BOTTOM);
 		btnDiv.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				txtTela.setText(txtTela.getText()+"/");
+				
+				n1 = Double.parseDouble( txtTela.getText());
+				 txtTela.setText("");
+				 operations = "/";
 				
 				
 			}
@@ -269,7 +314,8 @@ public class trabcalcui extends JFrame {
 		contentPane.add(btnDiv);
 		
 		txtTela = new JTextField();
-		txtTela.setFont(new Font("Times New Roman", Font.PLAIN, 70));
+		txtTela.setHorizontalAlignment(SwingConstants.RIGHT);
+		txtTela.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		txtTela.setBounds(12, 11, 225, 60);
 		contentPane.add(txtTela);
 		txtTela.setColumns(10);
@@ -277,6 +323,7 @@ public class trabcalcui extends JFrame {
 		JButton btnC = new JButton("C");
 		btnC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
 				txtTela.setText(null);
 			}
 		});
@@ -284,19 +331,13 @@ public class trabcalcui extends JFrame {
 		btnC.setFont(new Font("Yu Gothic UI", Font.BOLD, 40));
 		btnC.setBounds(247, 11, 69, 60);
 		contentPane.add(btnC);
+	
+		
+		
+		
 	}
 	
-	public static float soma(float x, float y)
-	{return x + y;}
-	
-	public static float subtracao(float x, float y)
-	{return x - y;}
-	
-	public static float multiplicacao(float x, float y)
-	{return x * y;}
-	
-	public static float divisao(float x, float y)
-	{return x / y;}
+
 }
 
 
