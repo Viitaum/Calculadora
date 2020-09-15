@@ -103,21 +103,7 @@ public class trabcalcui extends JFrame {
 				 txtTela.setText("");
 				 operations = "+";
 				
-				// valor1 = Double.parseDouble(txtTela.getText().toString());
-				
-				
-				
-				
-				
-				//VARIAVEL PRA SOMAR
-				//String x = txtTela.getText
-				//String a = txtTela.getText
-				//String y = txtTela.getText
-				//string Resultado
-				//string Operação
-				//string.valueOf = x
-				//string.valueOf = y
-				//x (a) y = resultado
+			
 				
 			}
 		});
